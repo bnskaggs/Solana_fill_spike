@@ -1,0 +1,34 @@
+{
+  "name": "solana-fill-spike",
+  "version": "1.0.0",
+  "description": "Measures what a Solana memecoin round trip actually costs: landing, pool fee, and drift.",
+  "main": "dist/index.js",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "wallet": "tsx src/cli/wallet.ts",
+    "swap:jupiter": "tsx src/cli/swap-jupiter.ts",
+    "swap:pumpfun": "tsx src/cli/swap-pumpfun.ts",
+    "campaign": "tsx src/cli/campaign.ts",
+    "summary": "tsx src/cli/summary.ts",
+    "watch:graduations": "tsx src/cli/watch-graduations.ts",
+    "serve": "tsx src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@solana/spl-token": "^0.4.15",
+    "@solana/web3.js": "^1.99.0",
+    "bs58": "^6.0.0",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}

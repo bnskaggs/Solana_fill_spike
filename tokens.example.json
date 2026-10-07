@@ -1,0 +1,8 @@
+[
+  {
+    "symbol": "EXAMPLE",
+    "mint": "replace-with-token-mint",
+    "route": "jupiter-round-trip",
+    "mode": "calm"
+  }
+]
